@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(75deg, rgb(113, 169, 122) 10%, rgb(150, 230, 244) 30%, rgb(214, 174, 241) 60%);
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fixed_header {
+    width: 100%;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top:0;
+    z-index: 100; 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 2rem;
+
+}
+
+.hero_section {
+    padding: 300px 0px;
+    position: relative;
+    text-align: center;
+
+}
+
+.hero_section h2:hover,
+.hero_section p:hover {
+    background: -webkit-linear-gradient(45deg, #80a73d 40%, #fff 50%, #395d8a 60%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-clip 5s ease-out;
+}
+
+.hero_section h2 {
+    font-size: 4rem;
+}
+
+.hero_section p {
+    font-size: 2rem;
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+}
+#work h2{
+    padding: 8px;
+}
+
+.card-item {
+    width: 80%;
+    height: 520px;
+    padding: 10px;
+    border: 2px solid rgb(197, 182, 182);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    font-weight: 600;
+}
+
+#contact, #work {
+    font-size: 2rem;
+    padding: 30px;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: auto;
+    }
+
+    header {
+        height: 100px;
+        padding: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .hero_section {
+        padding: 40px 0px;
+        height: 50vh;
+    }
+
+    .hero_section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero_section p {
+        font-size: 1.5rem;
+    }
+    #contact{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(min-width:601px) and (max-width:992px) {
+    body {
+        max-width: 99%;
+        margin: 0 auto;
+        padding: auto;
+    }
+
+    .hero_section {
+        padding: 40px 0px;
+        height: 50vh;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    ul li {
+        font-size: 2rem;
+    }
+}
