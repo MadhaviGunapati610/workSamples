@@ -26,20 +26,24 @@ a {
     align-items: center;
     padding: 20px 40px;
     position: fixed;
-    top:0;
-    z-index: 100; 
+    top: 0;
+    z-index: 100;
 }
 
-ul {
+.menu {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
 }
 
-ul li {
+.menu li {
     list-style-type: none;
     font-size: 2rem;
 
+}
+
+.menu .close {
+    display: none;
 }
 
 .hero_section {
@@ -54,6 +58,7 @@ ul li {
     background: -webkit-linear-gradient(45deg, #a73da7 40%, #fff 50%, #3c8a39 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: background-clip 5s ease-out;
 }
 
 .hero_section h2 {
@@ -70,7 +75,8 @@ ul li {
     gap: 3rem;
     justify-content: space-evenly;
 }
-#work h2{
+
+#work h2 {
     padding: 8px;
 }
 
@@ -84,7 +90,8 @@ ul li {
     font-weight: 600;
 }
 
-#contact, #work {
+#contact,
+#work {
     font-size: 2rem;
     padding: 30px;
     text-align: center;
@@ -96,7 +103,8 @@ ul li {
     justify-content: center;
     text-align: center;
 }
-.footer{
+
+.footer {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -114,13 +122,13 @@ ul li {
         padding: 1rem;
     }
 
-    ul li {
+    .menu li {
         font-size: 1rem;
     }
 
     .hero_section {
-        padding: 40px 0px;
-        height: 50vh;
+        padding: 100px 0px;
+        height: 30vh;
     }
 
     .hero_section h2 {
@@ -130,7 +138,8 @@ ul li {
     .hero_section p {
         font-size: 1.5rem;
     }
-    #contact{
+
+    #contact {
         font-size: 1.3rem;
     }
 
@@ -152,7 +161,7 @@ ul li {
         height: 100px;
     }
 
-    ul li {
+    .menu li {
         font-size: 2rem;
     }
 }

@@ -7,14 +7,16 @@
     <title>Work Samples</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/todo.css">
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 
 <body>
     <header class="fixed_header">
         <h1>MG</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                 <li><a href="#work" title="Work">Work</a></li>
                 <li><a href="#contact" title="Contact">Contact</a></li>
@@ -31,7 +33,19 @@
         <section id="work">
             <h2>Work</h2>
             <section class="card" data-aos="fade-in">
-                <div class="card-item">Sample Todo App</iframe></div>
+                <div class="card-item">
+                    <div id="myDIV" class="todo_header">
+                        <h2 style="margin:5px">My To Do List</h2>
+                        <input type="text" id="myInput" placeholder="Title...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                      </div>
+                      
+                      <ul id="myUL">
+                        <li>Hit the gym</li>
+                        <li class="checked">Pay bills</li>
+                      </ul>
+                      
+                </div>
             </section>
             <section id="contact">
                 <h2>Contact</h2>
