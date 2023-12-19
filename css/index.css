@@ -51,10 +51,9 @@ ul li {
 
 .hero_section h2:hover,
 .hero_section p:hover {
-    background: -webkit-linear-gradient(45deg, #80a73d 40%, #fff 50%, #395d8a 60%);
+    background: -webkit-linear-gradient(45deg, #a73da7 40%, #fff 50%, #3c8a39 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background-clip 5s ease-out;
 }
 
 .hero_section h2 {
